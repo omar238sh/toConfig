@@ -1,6 +1,7 @@
 pub mod autocmd;
 pub mod command;
 pub mod core;
+pub mod hyprland;
 pub mod fish;
 pub mod keymap;
 pub mod lua;
