@@ -51,9 +51,9 @@ pub(crate) fn json_array_str(items: &[String]) -> String {
 }
 
 /// Render a list of already-serialised JSON values as a JSON array: `[1, true, "x"]`.
-pub(crate) fn json_array_raw(items: &[String]) -> String {
-    format!("[{}]", items.join(", "))
-}
+// pub(crate) fn json_array_raw(items: &[String]) -> String {
+//     format!("[{}]", items.join(", "))
+// }
 
 /// Render key-value pairs as an indented JSON object.
 ///
@@ -163,8 +163,7 @@ impl WaybarConfig for WaybarConfigTree {
             1 => self.bars[0].render(ctx),
             _ => {
                 let deeper = ctx.deeper();
-                let rendered: Vec<String> =
-                    self.bars.iter().map(|b| b.render(&deeper)).collect();
+                let rendered: Vec<String> = self.bars.iter().map(|b| b.render(&deeper)).collect();
                 format!("[\n{}\n{}]", rendered.join(",\n"), ctx.indent())
             }
         }
