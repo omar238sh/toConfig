@@ -1,6 +1,6 @@
 use crate::core::ConfigTree;
 use crate::lua::LuaValue;
-use crate::options::{OptionNode, OptionsBlock, default_editor_options};
+use crate::neovim::options::{OptionNode, OptionsBlock, default_editor_options};
 
 /// Pre-built configuration profiles you can apply as a starting point.
 pub enum Profile {
