@@ -1,4 +1,4 @@
-//! `toconfig` — type-safe configuration generator for Neovim, Hyprland, and Fish.
+//! `toconfig` — type-safe configuration generator for Neovim, Hyprland, Fish, and Kitty.
 //!
 //! # Module Overview
 //!
@@ -10,10 +10,12 @@
 //! | [`neovim`] | All Neovim configuration builders                    |
 //! | [`hyprland`] | Hyprland window manager builders                  |
 //! | [`fish`]   | Fish shell configuration builders                    |
+//! | [`kitty`]  | Kitty terminal emulator configuration builders       |
 
 pub mod core;
 pub mod fish;
 pub mod hyprland;
+pub mod kitty;
 pub mod lua;
 pub mod neovim;
 pub mod output;
