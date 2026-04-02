@@ -8,6 +8,7 @@ pub mod gtk;
 pub mod fstab;
 pub mod helix;
 pub mod hyprland;
+pub mod kitty;
 pub mod ini;
 pub mod lua;
 pub mod neovim;
